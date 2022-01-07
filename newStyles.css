@@ -1,0 +1,30 @@
+body main {
+    height: 100vh;
+    margin: 0;
+}
+
+#mainBox {
+    top: 0;
+    background: black;
+    border: 5px solid rgb(67, 67, 67);
+    width: 100vw;
+    height: 110vh;
+}
+
+#imageBg {
+    border: 5px solid rgb(77, 147, 205);
+    background: transparent;
+    width: 99%;
+    height: 99%;
+}
+
+#controls {
+    top: 0;
+    background: rgb(31, 31, 31);
+    z-index: 100;
+}
+
+sl-input {
+    color: white;
+    max-width: 150px;
+}

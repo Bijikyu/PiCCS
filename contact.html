@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<meta name="keywords" content="website, blog, foo, bar"> TODO: add metadata for site
+    <meta name="author" content="John Doe">
+    <meta name="publisher" content="John Doe">
+    <meta name="copyright" content="John Doe">
+    <meta name="description" content="This short description describes my website.">
+    <meta name="page-topic" content="Media">
+    <meta name="page-type" content="Blogging">
+    <meta name="audience" content="Everyone">-->
+    <meta name="robots" content="index, follow">
+
+    <title>Business Name</title> <!--TODO: Change to site title-->
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+
+    <script src="https://kit.fontawesome.com/987e326b19.js" crossorigin="anonymous"></script> <!--TODO: Remove if unused-->
+
+    <!--TODO: Remove if unused-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <!--TODO: Remove if unused-->
+    <!-- Shoestrings <link rel="stylesheet" media="(prefers-color-scheme:light)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/themes/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/shoelace.js/+esm"></script>
+    -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class='desktop flex centerAlign'>
+            <a href='/index.html'><img id='headerLogo' src="images/logo.png"/></a>
+            <div>
+                <nav> 
+                    <ul class="flex">
+                        <li id='/show.html' class='navLi'><a href='/show.html'>Show</a></li>
+                        <li id='/display.html' class='navLi'><a href='/display.html'>Display</a></li>
+                        <li id='/about.html' class='navLi'><a href='/about.html'>About</a></li>
+                        <li id='/contact.html' class='navLi active'><a href='/contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class='mobile menuBox'>
+            <button id='menu'>Menu</button>
+            <div id='menu-drop'>
+                <nav> 
+                    <ul class="flex col">
+                        <li id='/index.html' class='navLi'><a href='/index.html'>Home</a></li>
+                        <li id='/show.html' class='navLi'><a href='/show.html'>Show</a></li>
+                        <li id='/display.html' class='navLi'><a href='/display.html'>Display</a></li>
+                        <li id='/about.html' class='navLi'><a href='/about.html'>About</a></li>
+                        <li id='/contact.html' class='navLi active'><a href='/contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>         
+        <div class='flex row top center'>
+            <div class='tricol col center centerAlign'>
+                <h2>Contact Us</h2>
+                <br>
+                <div class='flex mobileRow evenly'>
+                    <a href="tel:15555555555"><img class='contactIcon' src="images/phoneIcon.png" alt="Phone"/><br>PHONE</a> <!--TODO: phone # -->
+                    <a href="mailto:name@domain.com?subject=subject text"><img class='contactIcon' src="images/emailIcon.png" alt="Email"/><br>EMAIL</a> <!--TODO: email -->
+                </div>
+                <br>
+                <form action='https://formsapi.jabwn.com/key/p0yfEvzqAnax9BfZKJew' method='post'> <!--TODO: Unique https://formsapi.jabwn.com/ API-->
+                    <label for='name'>Name</label><br>
+                    <br>
+                    <input type='text' name='name' required>
+                    <br>
+                    <br>
+                    <p class='indicator'><span style='color:red'>* </span><small>INDICATES REQUIRED FIELD</small></p>
+                    <br>
+                    <br>
+                    <label for='email'>Email<span style='color:red'> *</span></label><br>
+                    <br>
+                    <input type='email' name='email' required>
+                    <br>
+                    <br>
+                    <label for='phone'>Phone<span style='color:red'> *</span></label><br>
+                    <br>
+                    <input type='text' name='phone' required>
+                    <br>
+                    <br>
+                    <input type="hidden" name="_subject" value="Contact Page Form"> <!--TODO: Set form name-->
+                    <input type="hidden" name="_replyto" value="%email">
+                    <input type="hidden" name="_after" value="https://www.google.com"> <!--TODO set redirect full path-->
+                    <br>
+                    <script></script> <!--TODO: iubunda privacy policy-->
+                    <button type='submit'>Contact Us</button>
+                </form>
+            </div>
+            <div class='column col center centerAlign'>
+                <h2>About Us</h2>
+                <p id='aboutP'> This service is not a publisher! We are here to help you prepare your work for self-publishing 
+                    or to submit it to publishers.
+                    <br>
+                    <br>
+                    ​Authors are usually faced with two options, and neither are very good. On the one hand, there 
+                    are platforms that let you quickly distribute your book, but do nothing to help your book be 
+                    publishing-ready or to stand out from the crowd.
+                    <br>
+                    <br>
+                    On the other hand, there are self-publishing services that sell exorbitant package deals, 
+                    with vague promises of what they are delivering and mystery surrounding their high costs.
+                    <br>
+                    <br>
+                    For an author new to publishing, it can be confusing concerning what's needed and what's not. 
+                    As a team experienced with the publishing world, we provide a suite of services that give 
+                    authors exactly what they need.
+                    <br>
+                    <br>
+                    Publishing Assist was created to give you the ability to be independent without truly having 
+                    to go it alone. Now you can buy competitively priced publishing services for your books as you 
+                    want them, à la carte.
+                    <br>
+                    <br>
+                    Publishing Assist was created by Brian Quezada, a founder of MQuills Publishing. Brian and his 
+                    team have 9 years experience in independent publishing, and have helped authors around the world 
+                    to get their books in front of readers.
+                </p>
+            </div>
+        </div>
+
+        
+        <div id='subBox' class='flex col'>
+            <h2>Submissions</h2>
+            <div class='flex row'>
+                <div class='subCol col column'>
+                    <h3>Manuscript Submission Guidelines:</h3>
+                    <br>
+                    <ul class='col subUl'>
+                        <li>Submit an email to mquills@mquills.com, and list the title of your work in the subject line.</li>
+                        <br>
+                        <li>Your work will be evaluated for meeting our Ethical Standards (see right), as well as meeting a 
+                            minimum amount of quality.</li>
+                        <br>
+                        <li>Be sure to proofread your work. Submissions with excessive typos or grammatical errors will be 
+                            rejected.</li>
+                        <br>
+                        <li>Please send the complete manuscript for your work with your query letter (email) 
+                            as an attached DOC (.doc) file. We receive a lot of manuscripts, and unfortunately cannot correspond with 
+                            authors before we have evaluated a work. This means that if only a chapter is sent, or if the manuscript 
+                            is not attached in some way, the query may be deleted. We only accept completed, unpublished works.</li>
+                        <br>
+                        <li>As a part of your email, be sure to include your name, your work's word count, a brief summary of 
+                            the plot, and any links or publication credits you may have.</li>
+                        <br>
+                        <li>We will try to respond within one month of submitting your query if we are considering it.</li>
+                        <br>
+                        <li>We do not accept submissions from authors for whom English is a second language (with which 
+                            they are not fluent) when those manuscripts have not been at least proof read by a native English speaker.</li>
+                    </ul>
+                </div>
+                <div class='subCol col column'>
+                    <h3>Ethical Standards:</h3>
+                    <br>
+                    <p> <strong>No disinformation:</strong> Health, metaphysical, spiritual or other works must not make claims that 
+                        are dubious or false.
+                        <br>
+                        <br>
+                        <strong>No illegal content:</strong> No incitements to violence, harassment, etc.
+                        <br>
+                        <br>
+                        <strong>"R Rated" or tamer:</strong> We do not accept submissions with excessive sex or gore. Submissions should 
+                        be, at most, only as graphic as one would expect of an R rated film.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class='flex centerAlign row evenly'>
+            <br>
+            <div class="flex centerAlign col tricol"> <!--Social Media Container-->
+                <a href=""><img class='contactIcon' src="images/fb.png" alt="Facebook"/></a>
+                <br>
+                <a href=""><img class='contactIcon' src="images/twit.png" alt="Twitter"/></a>
+            </div>
+            <div class="col footerDesktop tricol">
+                <div class='flex centerAlign col'>
+                    <img class='footerLogo logo' src="images/logotrans.png" alt="Footer logo"/>
+                    <p id="footText" >Brand © 2015 - 2021.<br>
+                        Brand is a service brand of Company.<br>
+                        ​All rights reserved.</p>
+                </div>
+                <div class="flex centerAlign">
+                    <div class="row" >
+                        <script></script> <!--TODO: iubunda privacy policy-->
+                        <br>
+                        <script></script> <!--TODO: iubunda cookie policy-->
+                    </div>
+                </div>
+            </div>
+            <div class="flex centerAlign col tricol">
+                <br>
+                <a href="tel:15555555555"><img class='contactIcon' src="images/phoneIcon.png" alt="Phone"/></a> <!--TODO: phone # -->
+                <br>
+                <a href="mailto:name@domain.com?subject=subject text"><img class='contactIcon' src="images/emailIcon.png" alt="Email"/></a> <!--TODO: email -->
+            </div>
+            <div class="flex col footerMobile">
+                <div class='flex centerAlign col'>
+                    <img class='footerLogo logo' src="images/logotrans.png" alt="Footer logo"/>
+                    <p id="footText" >Brand © 2015 - 2021.<br>
+                        Brand is a service brand of Company.<br>
+                        ​All rights reserved.</p>
+                </div>
+                <div class="flex">
+                    <div class="row" >
+                        <script></script> <!--TODO: iubunda privacy policy-->
+                        <br>
+                        <script></script> <!--TODO: iubunda cookie policy-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script></script> <!--TODO: Trusted Site Badge-->
+        <script type="text/javascript" src="main.js"></script>
+    </footer>
+</body>
+</html>

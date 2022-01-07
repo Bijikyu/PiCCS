@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="sl-theme-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--<meta name="keywords" content="website, blog, foo, bar"> TODO: add metadata for site
+        <meta name="author" content="John Doe">
+        <meta name="publisher" content="John Doe">
+        <meta name="copyright" content="John Doe">
+        <meta name="description" content="This short description describes my website.">
+        <meta name="page-topic" content="Media">
+        <meta name="page-type" content="Blogging">
+        <meta name="audience" content="Everyone">-->
+        <meta name="robots" content="index, follow">
+    
+        <title>Business Name</title> <!--TODO: Change to site title-->
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+    
+        <script src="https://kit.fontawesome.com/987e326b19.js" crossorigin="anonymous"></script> <!--TODO: Remove if unused-->
+    
+        <!--TODO: Remove if unused-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        
+        <!--TODO: Remove if unused-->
+        <!-- Shoestrings <link rel="stylesheet" media="(prefers-color-scheme:light)" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/themes/light.css">
+        <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/shoelace.js/+esm"></script>
+        -->
+    
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+    <header>
+        <div class='desktop flex centerAlign'>
+            <a href='/index.html'><img id='headerLogo' src="images/logo.png"/></a>
+            <div>
+                <nav> 
+                    <ul class="flex">
+                        <li id='/show.html' class='navLi'><a href='/show.html'>Show</a></li>
+                        <li id='/display.html' class='navLi active'><a href='/display.html'>Display</a></li>
+                        <li id='/about.html' class='navLi'><a href='/about.html'>About</a></li>
+                        <li id='/contact.html' class='navLi'><a href='/contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class='mobile menuBox'>
+            <button id='menu'>Menu</button>
+            <div id='menu-drop'>
+                <nav> 
+                    <ul class="flex col">
+                        <li id='/index.html' class='navLi'><a href='/index.html'>Home</a></li>
+                        <li id='/show.html' class='navLi'><a href='/show.html'>Show</a></li>
+                        <li id='/display.html' class='navLi active'><a href='/display.html'>Display</a></li>
+                        <li id='/about.html' class='navLi'><a href='/about.html'>About</a></li>
+                        <li id='/contact.html' class='navLi'><a href='/contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class='col'>
+        <h1>Offering 2: What We Do</h1>
+        <div class='flex row displayBox'>
+            <div class='flex col'>
+                <img class='displayImg desktop' src="images/displayImg.jpg" alt="icon for product"/> <!--TODO: Change alt texxt and image-->
+                <img class='displayImg' src="images/displayImg.jpg" alt="icon for product"/>
+            </div>
+
+            <div class='flex col core'>
+                <div class='flex center'>
+                    <ul class='col offerlist'>
+                        <li class='displayLi'>Point 1: an interesting point</li>
+                        <li class='displayLi'>Point 2: an interesting point</li>
+                        <li class='displayLi'>Point 3: an interesting point</li>
+                        <li class='displayLi'>Point 4: an interesting point</li>
+                        <li class='displayLi'>Point 5: an interesting point</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div class='col'>
+                    <div class='flex mobileRow evenly'>
+                        <a href="tel:15555555555"><img class='contactIcon' src="images/phoneIcon.png" alt="Phone"/><br>PHONE</a> <!--TODO: phone # -->
+                        <a href="mailto:name@domain.com?subject=subject text"><img class='contactIcon' src="images/emailIcon.png" alt="Email"/><br>EMAIL</a> <!--TODO: email-->
+                    </div>
+                    <div>
+                        <h3>Order Offering 2</h3>
+                    </div>
+                    <br>
+                    <div>
+                        <form action='https://formsapi.jabwn.com/key/p0yfEvzqAnax9BfZKJew' method='post'> <!--TODO: Unique https://formsapi.jabwn.com/ API-->
+                            <label for='name'>Name</label><br>
+                            <br>
+                            <input type='text' name='name' required>
+                            <br>
+                            <br>
+                            <p class='indicator'><span style='color:red'>* </span><small>INDICATES REQUIRED FIELD</small></p>
+                            <br>
+                            <br>
+                            <div class='flex row'>
+                                <div>
+                                    <label for='email'>Email<span style='color:red'> *</span></label><br>
+                                    <br>
+                                    <input type='email' name='email' required>
+                                    <br>
+                                </div>
+                                <div>
+                                    <label for='phone'>Phone<span style='color:red'> *</span></label><br>
+                                    <br>
+                                    <input type='text' name='phone' required>
+                                    <br>
+
+                                </div>
+                            </div>
+                            <br>
+                            <input type="hidden" name="_subject" value="Display Page Form"> <!--TODO: Set form name-->
+                            <input type="hidden" name="_replyto" value="%email">
+                            <input type="hidden" name="_after" value="https://www.google.com"> <!--TODO set redirect full path-->
+                            <br>
+                            <script></script> <!--TODO: iubunda privacy policy-->
+                            <button type='submit'>Get Your X</button>
+                        </form>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class='flex col'>
+                <img class='displayImg desktop' src="images/displayImg.jpg" alt="icon for product"/> <!--TODO: Change alt text and image-->
+                <img class='displayImg' src="images/displayImg.jpg" alt="icon for product"/>
+            </div>
+        </div>
+
+        <div class='flex centerAlign col panel'>
+            <br>
+            <img id='modalBtn' class='displayImg' src="images/displayImg.jpg" alt="icon for product"/> <!--Trigger modal--> <!--TODO: Change alt text and image-->
+
+            <div id='modal' class='modal'> <!--The modal-->
+                <img class='modalImg' src="images/displayImg.jpg" alt="icon for product"/>
+
+            </div>
+
+            <br>
+            <h2>More About Offering</h2>
+            <br>
+            <p class='explainer'>They done good. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur 
+                voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat 
+                iusto fuga praesentium optio, eaque rerum! Provident similique accusantium 
+                nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto 
+                voluptate aliquam.<br>
+                <br>
+                They done good. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur 
+                voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat 
+                iusto fuga praesentium optio, eaque rerum! Provident similique accusantium 
+                nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto 
+                voluptate aliquam.<br>
+                <br>
+                They done good. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur 
+                voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat 
+                iusto fuga praesentium optio, eaque rerum! Provident similique accusantium 
+                nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto 
+                voluptate aliquam.<br>
+                <br>
+            </p>
+            <form action='https://formsapi.jabwn.com/key/p0yfEvzqAnax9BfZKJew' method='post'> <!--TODO: Unique https://formsapi.jabwn.com/ API-->
+                <div class='flex row'>
+                    <div>
+                        <label for='name'>Name</label><br>
+                        <br>
+                        <input type='text' name='name' required>
+                        <br>
+                    </div>
+                    <div>
+                        <label for='email'>Email<span style='color:red'> *</span></label><br>
+                        <br>
+                        <input type='email' name='email' required>
+                        <br>
+                    </div>
+                    <div>
+                        <label for='phone'>Phone<span style='color:red'> *</span></label><br>
+                        <br>
+                        <input type='text' name='phone' required>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <p class='indicator'><span style='color:red'>* </span><small>INDICATES REQUIRED FIELD</small></p>
+                <br>
+                <input type="hidden" name="_subject" value="Display Page Form2"> <!--TODO: Set form name-->
+                <input type="hidden" name="_replyto" value="%email">
+                <input type="hidden" name="_after" value="https://www.google.com"> <!--TODO set redirect full path-->
+                <br>
+                <script></script> <!--TODO: iubunda privacy policy-->
+                <button type='submit'>Get Your X</button>
+            </form>
+            <br>
+            <br>
+        </div>
+    </main>
+
+    <footer>
+        <div class='flex centerAlign row evenly'>
+            <br>
+            <div class="flex centerAlign col tricol"> <!--Social Media Container-->
+                <a href=""><img class='contactIcon' src="images/fb.png" alt="Facebook"/></a>
+                <br>
+                <a href=""><img class='contactIcon' src="images/twit.png" alt="Twitter"/></a>
+            </div>
+            <div class="col footerDesktop tricol">
+                <div class='flex centerAlign col'>
+                    <img class='footerLogo logo' src="images/logotrans.png" alt="Footer logo"/>
+                    <p id="footText" >Brand © 2015 - 2021.<br>
+                        Brand is a service brand of Company.<br>
+                        ​All rights reserved.</p>
+                </div>
+                <div class="flex centerAlign">
+                    <div class="row" >
+                        <script></script> <!--TODO: iubunda privacy policy-->
+                        <br>
+                        <script></script> <!--TODO: iubunda cookie policy-->
+                    </div>
+                </div>
+            </div>
+            <div class="flex centerAlign col tricol">
+                <br>
+                <a href="tel:15555555555"><img class='contactIcon' src="images/phoneIcon.png" alt="Phone"/></a> <!--TODO: phone # -->
+                <br>
+                <a href="mailto:name@domain.com?subject=subject text"><img class='contactIcon' src="images/emailIcon.png" alt="Email"/></a> <!--TODO: email -->
+            </div>
+            <div class="flex col footerMobile">
+                <div class='flex centerAlign col'>
+                    <img class='footerLogo logo' src="images/logotrans.png" alt="Footer logo"/>
+                    <p id="footText" >Brand © 2015 - 2021.<br>
+                        Brand is a service brand of Company.<br>
+                        ​All rights reserved.</p>
+                </div>
+                <div class="flex">
+                    <div class="row" >
+                        <script></script> <!--TODO: iubunda privacy policy-->
+                        <br>
+                        <script></script> <!--TODO: iubunda cookie policy-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script></script> <!--TODO: Trusted Site Badge-->
+        <script type="text/javascript" src="main.js"></script>
+    </footer>
+</body>
+</html>
